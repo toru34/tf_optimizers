@@ -1,4 +1,4 @@
-Implementation of optimizers in tensorflow using tf.gradients.
+Implementation of optimizers in tensorflow from scratch.
 
 Optimizers
 - Gradient descent
