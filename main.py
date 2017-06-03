@@ -25,7 +25,7 @@ layers = [
 y, params = f_props(layers, x)
 
 cost = -tf.reduce_mean(tf.reduce_sum(t*tf_log(y), axis=1))
-updates = adamax(cost, params)
+updates = smorms3(cost, params)
 
 train = tf.group(*updates)
 test  = tf.argmax(y, axis=1)
