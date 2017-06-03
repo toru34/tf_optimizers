@@ -1,4 +1,4 @@
-Implementation of optimizers in tensorflow from scratch.
+Implementation of optimizers in tensorflow from scratch. See `main.py`.
 
 Optimizers
 - Gradient descent
