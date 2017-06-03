@@ -10,5 +10,6 @@ Optimizers
 - RMSProp
 - Adam
 - Adamax
+- SMORMS3
 
 Might be useful.
