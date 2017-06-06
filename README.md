@@ -12,8 +12,6 @@ Optimizers
 - Adamax
 - SMORMS3
 
-Might be useful.
-
 ## References
 - An overview of gradient descent optimization algorithms: http://sebastianruder.com/optimizing-gradient-descent/
 - Chainer Optimizers: http://docs.chainer.org/en/stable/reference/optimizers.html
