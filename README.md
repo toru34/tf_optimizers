@@ -1,8 +1,8 @@
 Optimizers in tensorflow from scratch. See `example.py` and `optimizers.py`.
 
 Optimizers
-- Gradient descent
-- Gradient descent with gradient clipping
+- Stochastic Gradient descent
+- Stochastic Gradient descent with gradient clipping
 - Momentum
 - Nesterov momentum
 - Adagrad

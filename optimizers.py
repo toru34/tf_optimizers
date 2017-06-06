@@ -2,7 +2,7 @@ import numpy as np
 import tensorflow as tf
 
 
-def gd(cost, params, lr=np.float32(0.01)):
+def sgd(cost, params, lr=np.float32(0.01)):
     g_params = tf.gradients(cost, params)
     updates = []
     for param, g_param in zip(params, g_params):
@@ -10,7 +10,7 @@ def gd(cost, params, lr=np.float32(0.01)):
     return updates
 
 
-def gd_clip(cost, params, lr=np.float32(0.01), thld=np.float32(1.0)):
+def sgd_clip(cost, params, lr=np.float32(0.01), thld=np.float32(1.0)):
     g_params = tf.gradients(cost, params)
     updates = []
     for param, g_param in zip(params, g_params):

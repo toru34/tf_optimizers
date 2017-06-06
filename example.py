@@ -6,7 +6,7 @@ from sklearn.metrics import f1_score
 
 from utils import f_props, load_mnist, tf_log
 from layers import Dense
-from optimizers import gd, gd_clip, momentum, nesterov_momentum, adagrad, adadelta, rmsprop, adam, adamax, smorms3
+from optimizers import sgd, sgd_clip, momentum, nesterov_momentum, adagrad, adadelta, rmsprop, adam, adamax, smorms3
 
 random_state = 42
 
@@ -26,8 +26,8 @@ y, params = f_props(layers, x)
 
 cost = -tf.reduce_mean(tf.reduce_sum(t*tf_log(y), axis=1))
 
-# Choose an optimizer from gd, gd_clip, momentum, nesterov_momentum, adagrad, adadelta, rmsprop, adam, adamax, smorms3
-updates = smorms3(cost, params)
+# Choose an optimizer from sgd, sgd_clip, momentum, nesterov_momentum, adagrad, adadelta, rmsprop, adam, adamax, smorms3
+updates = adam(cost, params)
 
 train = tf.group(*updates)
 test  = tf.argmax(y, axis=1)
